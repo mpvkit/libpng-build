@@ -46,10 +46,14 @@ enum Library: String, CaseIterable {
 private class BuildPng: BaseBuild {
     init() {
         super.init(library: .libpng)
+    }
+
+    override func beforeBuild() throws {
+        try super.beforeBuild()
 
         // no need run autogen.sh
         let autogen = directoryURL + "autogen.sh"
-        try? FileManager.default.removeItem(at: autogen)
+        try FileManager.default.removeItem(at: autogen)
     }
 
     override func arguments(platform : PlatformType, arch : ArchType) -> [String] {
