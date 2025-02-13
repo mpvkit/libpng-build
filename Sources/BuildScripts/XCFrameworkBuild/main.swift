@@ -33,9 +33,9 @@ enum Library: String, CaseIterable {
         case .libpng:
             return  [
                 .target(
-                    name: "libpng",
-                    url: "https://github.com/mpvkit/libpng-build/releases/download/\(BaseBuild.options.releaseVersion)/libpng.xcframework.zip",
-                    checksum: "https://github.com/mpvkit/libpng-build/releases/download/\(BaseBuild.options.releaseVersion)/libpng.xcframework.checksum.txt"
+                    name: "Libpng",
+                    url: "https://github.com/mpvkit/libpng-build/releases/download/\(BaseBuild.options.releaseVersion)/Libpng.xcframework.zip",
+                    checksum: "https://github.com/mpvkit/libpng-build/releases/download/\(BaseBuild.options.releaseVersion)/Libpng.xcframework.checksum.txt"
                 ),
             ]
         }
